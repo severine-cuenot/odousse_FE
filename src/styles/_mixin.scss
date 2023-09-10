@@ -1,0 +1,30 @@
+// Breakpoints variables
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+$xl: 1200px;
+
+//Mixin
+@mixin small {
+  @media only screen and (max-width: $small){
+    @content
+  }
+};
+
+@mixin medium {
+  @media only screen and (max-width: $medium){
+    @content
+  }
+};
+
+@mixin large {
+  @media only screen and (max-width: $large){
+    @content
+  }
+};
+
+@mixin large {
+  @media only screen and (max-width: $large){
+    @content
+  }
+};

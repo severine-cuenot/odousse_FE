@@ -1,18 +1,28 @@
 @use 'reset';
 @use 'vars';
 
-body {
-  font-family: sans-serif;
+//font for dyslexia
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../assets/fonts/OpenDyslexic3-Regular.ttf')
 }
 
-/* 
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-  }
+body {
+  min-height: 100vh;
+  background: vars.$darkblue;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right top, #217084, #1badae);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right top, #217084, #1badae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-*/
+// default body font
+.default-font {
+  font-family: vars.$defaultFont;
+}
+
+// Dyslexia font
+.dyslexia-font {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+
+
