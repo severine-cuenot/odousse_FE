@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className={`app ${isFontChanged ? 'dyslexia-font' : 'vars.defaultFont'}`}>
+    <div className={`app ${isFontChanged ? 'dyslexia-font' : 'default-font'}`}>
       <AppHeader isFontChanged={isFontChanged} handleChangeFont={handleChangeFont} />
     </div>
   );
