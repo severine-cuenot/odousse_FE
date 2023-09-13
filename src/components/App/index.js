@@ -1,13 +1,24 @@
-// == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+// Imports
+// import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+
+// Import components
+import AppHeader from '../AppHeader';
+
+// Import style
+import './styles.scss';
 
 // == Composant
 function App() {
+  // Change font
+  const [isFontChanged, setFontChange] = useState(false);
+  const handleChangeFont = () => {
+    setFontChange(!isFontChanged);
+  };
+
   return (
-    <div className="app">
-      <img src={reactLogo} alt="react logo" />
-      <h1>Composant : App</h1>
+    <div className={`app ${isFontChanged ? 'dyslexia-font' : 'vars.defaultFont'}`}>
+      <AppHeader isFontChanged={isFontChanged} handleChangeFont={handleChangeFont} />
     </div>
   );
 }

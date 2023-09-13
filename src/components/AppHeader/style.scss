@@ -1,0 +1,11 @@
+@use '../../styles/vars';
+@use '../../styles/mixin';
+
+.nav-menu {
+  display: flex;
+  padding: 1em;
+
+  &__logo {
+    color: vars.$white;
+  }
+}
