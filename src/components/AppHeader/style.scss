@@ -5,21 +5,47 @@
 
 .nav-menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 2em 0.5em;
   border-bottom: 1px solid vars.$white;
-
-  &__left-part {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__right-part {
-    display: flex;
-    flex-direction: row;
-  }
+  height: 3.7em;
+  margin-bottom: 1em;
 
   &__logo {
     color: vars.$white;
+    font-size: 1em;
   }
+
+  &__burger-button {
+    width: 3.5em;
+    border: none; 
+    border-radius: vars.$radius;
+    background-color: vars.$mediumblue;
+  }
+
+  &__burger-button svg {
+    width: 2em;
+    fill: vars.$white;
+  }
+
+  &__burger-button--text {
+    display: block;
+    position: relative;
+    bottom: 3px;
+    font-size: 0.8em;
+    color: vars.$white;
+  }
+
+  &__expanded {
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$darkblue;
+  }
+
+  &__not-expanded {
+    display: none;
+  }
+
+ 
 }
