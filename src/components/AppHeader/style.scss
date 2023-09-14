@@ -4,13 +4,21 @@
 /* Penser à jeter un oeil au menu burger de MDN, très sympa pour la version mobile */
 
 .nav-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2em 0.5em;
-  border-bottom: 1px solid vars.$white;
+  display: block;
   height: 3.7em;
   margin-bottom: 1em;
+  padding: 0.5em;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__border-block {
+    height: 1px;
+    background-color: vars.$white;
+  }
 
   &__logo {
     color: vars.$white;
@@ -22,6 +30,12 @@
     border: none; 
     border-radius: vars.$radius;
     background-color: vars.$mediumblue;
+    margin-bottom: 0.5em;
+  }
+
+  &__burger-button[aria-expanded='true'] {
+    background-color: vars.$darkblue;
+    color: vars.$white;
   }
 
   &__burger-button svg {
@@ -41,6 +55,9 @@
     display: flex;
     flex-direction: column;
     background-color: vars.$darkblue;
+    color: vars.$white;
+    margin-top: 1em;
+    // padding: 1em;
   }
 
   &__not-expanded {
