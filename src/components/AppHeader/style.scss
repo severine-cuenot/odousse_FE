@@ -30,7 +30,7 @@
     border: none; 
     border-radius: vars.$radius;
     background-color: vars.$mediumblue;
-    margin-bottom: 0.5em;
+    // margin-bottom: 0.5em;
   }
 
   &__burger-button[aria-expanded='true'] {
@@ -54,11 +54,12 @@
   &__expanded {
     display: flex;
     flex-direction: column;
-    position: sticky;
+    position: relative;
+    z-index: 1;
     background-color: vars.$darkblue;
     color: vars.$white;
-    // margin-top: 1em;
-    // padding: 1em;
+    border-bottom: 1px solid vars.$white;
+    padding: 1em;
   }
 
   &__not-expanded {

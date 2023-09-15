@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
-import './style.scss';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-function AppHeader() {
+import ToggleDyslexia from '../ToggleDyslexia';
+
+import './style.scss';
+
+function AppHeader({ handleChangeFont }) {
   const [isExpanded, setExpanded] = useState(false);
   const handleClick = () => {
     setExpanded(!isExpanded);
@@ -26,7 +30,7 @@ function AppHeader() {
           </button>
         </div>
         <ul className={isExpanded ? 'nav-menu__expanded' : 'nav-menu__not-expanded'}>
-          <li>Dyslexie</li>
+          <ToggleDyslexia onClick={handleChangeFont} />
           <li className="nav-menu__expanded--element" onClick={handleClick}>Inscription</li>
           <li onClick={handleClick}>Connexion</li>
           <li className="nav-menu__expanded--element" onClick={handleClick}>Glossaire</li>
@@ -37,5 +41,9 @@ function AppHeader() {
     </div>
   );
 }
+
+AppHeader.propTypes = {
+  handleChangeFont: PropTypes.func.isRequired,
+};
 
 export default AppHeader;
