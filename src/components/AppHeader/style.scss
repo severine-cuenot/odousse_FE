@@ -5,14 +5,14 @@
 
 .nav-menu {
   display: block;
-  height: 3.7em;
+  height: 3.1em;
   margin-bottom: 1em;
-  padding: 0.5em;
 
   &__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5em;
   }
 
   &__border-block {
@@ -54,9 +54,10 @@
   &__expanded {
     display: flex;
     flex-direction: column;
+    position: sticky;
     background-color: vars.$darkblue;
     color: vars.$white;
-    margin-top: 1em;
+    // margin-top: 1em;
     // padding: 1em;
   }
 
