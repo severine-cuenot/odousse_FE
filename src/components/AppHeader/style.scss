@@ -28,7 +28,7 @@
   &__burger-button {
     width: 3.5em;
     border: none; 
-    border-radius: vars.$radius;
+    border-radius: vars.$btnRadius;
     background-color: vars.$mediumblue;
     // margin-bottom: 0.5em;
   }
@@ -40,6 +40,7 @@
 
   &__burger-button svg {
     width: 2em;
+    padding: 0.3em 0;
     fill: vars.$white;
   }
 
@@ -60,6 +61,11 @@
     color: vars.$white;
     border-bottom: 1px solid vars.$white;
     padding: 1em;
+  }
+
+  &__expanded--element {
+    padding: 1em;
+    border-top: 1px solid vars.$mediumblue;
   }
 
   &__not-expanded {

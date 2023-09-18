@@ -3,6 +3,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import ToggleDyslexia from '../ToggleDyslexia';
+import Button from '../button';
 
 import './style.scss';
 
@@ -31,8 +32,8 @@ function AppHeader({ handleChangeFont }) {
         </div>
         <ul className={isExpanded ? 'nav-menu__expanded' : 'nav-menu__not-expanded'}>
           <ToggleDyslexia onClick={handleChangeFont} />
-          <li className="nav-menu__expanded--element" onClick={handleClick}>Inscription</li>
-          <li onClick={handleClick}>Connexion</li>
+          <li onClick={handleClick}><Button label="S'inscrire" buttonStyle="simple" /></li>
+          <li className="nav-menu__expanded--element" onClick={handleClick}>Connexion</li>
           <li className="nav-menu__expanded--element" onClick={handleClick}>Glossaire</li>
           <li className="nav-menu__expanded--element" onClick={handleClick}>A propos</li>
         </ul>

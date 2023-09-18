@@ -1,0 +1,19 @@
+@use '../../styles/vars';
+@use '../../styles/mixin';
+
+.button {
+  border-radius: vars.$btnRadius;
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+
+  &--simple {
+    background-color: vars.$white;
+  }
+}
+
+
