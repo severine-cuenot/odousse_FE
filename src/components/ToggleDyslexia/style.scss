@@ -30,8 +30,8 @@
   &__track {
     display: flex;
     position: relative;
-    height: 2em;
-    width: 3.8em;
+    height: 1.6em;
+    width: 3.5em;
     background-color: vars.$white;
     border: 1px solid vars.$darkblue;
     border-radius: 100px;
@@ -43,10 +43,10 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0.19em;
+    bottom: 0.1em;
     left: 0.1em;
-    height: 1.5em;
-    width: 1.6em;
+    height: 1.3em;
+    width: 1.3em;
     background-color: vars.$darkblue;
     border-radius: 24px;
     outline: solid 2px transparent;
@@ -55,8 +55,8 @@
 
   &__checkMark {
     fill: vars.$white;
-    height: 1.6em;
-    width: 3.8em;
+    height: 1.2em;
+    width: 3.6em;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }

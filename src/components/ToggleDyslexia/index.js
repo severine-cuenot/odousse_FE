@@ -7,7 +7,7 @@ function ToggleDyslexia({ onClick }) {
     <label className="toggle" htmlFor="mobileToggle">
       <input
         type="checkbox"
-        className="toogle__input"
+        className="toggle__input"
         id="mobileToggle"
         onClick={onClick}
       />
