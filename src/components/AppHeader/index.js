@@ -36,7 +36,6 @@ function AppHeader({ handleChangeFont }) {
               data-src={svgImg}
               alt="{svgImg}"
               className={svgClass}
-              // fill="#f7fdfd"
             />
             <span className="nav-menu__burger-button--text">Menu</span>
           </button>

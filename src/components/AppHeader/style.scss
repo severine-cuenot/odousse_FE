@@ -46,13 +46,13 @@
   }
 
   &__burger-svg {
-    width: 2em;
+    height: 2.3em;
     fill: vars.$white !important;
     transition: transform 0.3s;
   }
 
   &__burger-svg-cross {
-    width: 2em;
+    height: 2.3em;
     fill: vars.$white !important; 
     transform: rotate(45deg);
     transition: transform 0.3s;
