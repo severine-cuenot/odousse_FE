@@ -37,18 +37,25 @@
     color: vars.$white;
   }
 
-  &__burger-button svg {
-    width: 2em;
-    padding: 0.3em 0;
-    fill: vars.$white;
-  }
-
   &__burger-button--text {
     display: block;
     position: relative;
     bottom: 3px;
     font-size: 0.8em;
     color: vars.$white;
+  }
+
+  &__burger-svg {
+    width: 2em;
+    fill: vars.$white !important;
+    transition: transform 0.3s;
+  }
+
+  &__burger-svg-cross {
+    width: 2em;
+    fill: vars.$white !important; 
+    transform: rotate(45deg);
+    transition: transform 0.3s;
   }
 
   &__expanded {
@@ -77,6 +84,4 @@
   &__not-expanded {
     display: none;
   }
-
- 
 }

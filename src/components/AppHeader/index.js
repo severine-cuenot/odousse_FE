@@ -1,9 +1,14 @@
+/* eslint-disable max-len */
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import 'external-svg-loader';
 
 import ToggleDyslexia from '../ToggleDyslexia';
 import Button from '../button';
+
+import burgerImg from '../../../public/img/burger.svg';
+import crossImg from '../../../public/img/cross.svg';
 
 import './style.scss';
 
@@ -12,6 +17,8 @@ function AppHeader({ handleChangeFont }) {
   const handleClick = () => {
     setExpanded(!isExpanded);
   };
+  const svgImg = isExpanded ? crossImg : burgerImg;
+  const svgClass = isExpanded ? 'nav-menu__burger-svg-cross' : 'nav-menu__burger-svg';
   return (
     <div>
       <nav className="nav-menu" role="navigation" aria-label="Menu de navigation">
@@ -25,10 +32,12 @@ function AppHeader({ handleChangeFont }) {
             aria-expanded={isExpanded ? 'true' : 'false'}
             onClick={handleClick}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              {/* Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
-              <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-            </svg>
+            <svg
+              data-src={svgImg}
+              alt="{svgImg}"
+              className={svgClass}
+              // fill="#f7fdfd"
+            />
             <span className="nav-menu__burger-button--text">Menu</span>
           </button>
         </div>
