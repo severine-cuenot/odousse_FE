@@ -1,0 +1,72 @@
+@use '../../styles/vars';
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin-bottom: 1em;
+
+  &__input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+
+    // This style sets the focus ring. The ":not([disabled])" prevents the focus ring from creating a flash when the element is clicked.
+    &:not([disabled]):active + .toggle-track,
+    &:not([disabled]):focus + .toggle-track {
+      border: 1px solid transparent;
+      box-shadow: 0px 0px 0px 1px vars.$darkblue;
+    }
+  }
+
+  &__track {
+    display: flex;
+    position: relative;
+    height: 1.6em;
+    width: 3.5em;
+    background-color: vars.$white;
+    border: 1px solid vars.$darkblue;
+    border-radius: 100px;
+    margin-right: 0.8em;
+  }
+
+  &__indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0.1em;
+    left: 0.1em;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: vars.$darkblue;
+    border-radius: 24px;
+    outline: solid 2px transparent;
+    transition: 0.5s;
+  }
+
+  &__checkMark {
+    fill: vars.$white;
+    height: 1.2em;
+    width: 3.6em;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+.toggle__input:checked + .toggle__track .toggle__indicator {
+  background: vars.$mediumblue;
+  transform: translateX(3.8em - 2em);
+
+  .toggle__checkMark {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+
