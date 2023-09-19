@@ -18,6 +18,8 @@ function AppHeader({ handleChangeFont }) {
         <div className="nav-menu__block">
           <Link to="/" title="Retourner à la page d'accueil" className="nav-menu__logo">Ôdousse</Link>
           <button
+            title="Ouvrir le menu"
+            aria-label="Ouvrir le menu"
             className="nav-menu__burger-button"
             type="button"
             aria-expanded={isExpanded ? 'true' : 'false'}
@@ -37,7 +39,7 @@ function AppHeader({ handleChangeFont }) {
             <li onClick={handleClick}><Link to="/login"><Button label="Connexion" buttonStyle="empty" /></Link></li>
           </div>
           <li className="nav-menu__expanded--element" onClick={handleClick}><Link to="/lexicon">Glossaire</Link></li>
-          <li className="nav-menu__expanded--element" onClick={handleClick}><Link to="/about">A propos</Link></li>
+          <li className="nav-menu__expanded--element" onClick={handleClick}><Link to="/about">À propos</Link></li>
         </ul>
       </nav>
       <hr className="nav-menu__border-block" />
