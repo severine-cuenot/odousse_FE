@@ -68,6 +68,13 @@
     border-top: 1px solid vars.$mediumblue;
   }
 
+  &__expanded--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1em;;
+  }
+
   &__not-expanded {
     display: none;
   }

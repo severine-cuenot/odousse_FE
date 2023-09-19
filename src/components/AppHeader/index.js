@@ -32,10 +32,12 @@ function AppHeader({ handleChangeFont }) {
         </div>
         <ul className={isExpanded ? 'nav-menu__expanded' : 'nav-menu__not-expanded'}>
           <ToggleDyslexia onClick={handleChangeFont} />
-          <li onClick={handleClick}><Button label="S'inscrire" buttonStyle="simple" /></li>
-          <li className="nav-menu__expanded--element" onClick={handleClick}>Connexion</li>
-          <li className="nav-menu__expanded--element" onClick={handleClick}>Glossaire</li>
-          <li className="nav-menu__expanded--element" onClick={handleClick}>A propos</li>
+          <div className="nav-menu__expanded--buttons">
+            <li onClick={handleClick}><Link to="/login"><Button label="S'inscrire" buttonStyle="simple" /></Link></li>
+            <li onClick={handleClick}><Link to="/login"><Button label="Connexion" buttonStyle="empty" /></Link></li>
+          </div>
+          <li className="nav-menu__expanded--element" onClick={handleClick}><Link to="/lexicon">Glossaire</Link></li>
+          <li className="nav-menu__expanded--element" onClick={handleClick}><Link to="/about">A propos</Link></li>
         </ul>
       </nav>
       <hr className="nav-menu__border-block" />
