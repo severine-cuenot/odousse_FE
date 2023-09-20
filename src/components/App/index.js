@@ -23,9 +23,11 @@ function App() {
   return (
     <div className={`app ${isFontChanged ? 'dyslexia-font' : 'default-font'}`}>
       <AppHeader isFontChanged={isFontChanged} handleChangeFont={handleChangeFont} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="app__content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
       <AppFooter />
     </div>
   );

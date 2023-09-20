@@ -1,9 +1,45 @@
-/* eslint-disable max-len */
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+import './style.scss';
 
 function AppFooter() {
+  const year = new Date().getFullYear();
   return (
-    <h1>Test footer</h1>
+    <footer className="footer">
+      <div className="footer__container">
+        <header className="footer__header">
+          <Link to="/">Ôdousse</Link>
+        </header>
+        <nav className="footer__navigation">
+          <div className="footer__main-nav">
+            <h2 className="footer__section-title">
+              Ôdousse
+            </h2>
+            <ul className="footer__section-list">
+              <li><Link to="/about">À propos</Link></li>
+            </ul>
+            <h2 className="footer__section-title">
+              Outils
+            </h2>
+            <ul className="footer__section-list">
+              <li><Link to="/search">Recherche détaillée</Link></li>
+              <li><Link to="/lexicon">Lexique</Link></li>
+            </ul>
+            <h2 className="footer__section-title">
+              Légal
+            </h2>
+            <ul className="footer__section-list">
+              <li><Link to="/cgu">CGU</Link></li>
+              <li><Link to="/privacy">Politique de confidentialité</Link></li>
+              <li><Link to="/credits">Crédits</Link></li>
+            </ul>
+          </div>
+        </nav>
+        <div className="footer__copyright">
+          <p>Tous droits réservés &copy; NineInjections {year}</p>
+        </div>
+      </div>
+    </footer>
   );
 }
 

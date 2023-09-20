@@ -1,0 +1,40 @@
+@use '../../styles/vars';
+@use '../../styles/mixin';
+
+.footer {
+  flex-shrink: 0;
+  margin-top: 3em;
+  background-color: vars.$mediumblue;
+  color: vars.$white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2em;
+  }
+
+  &__main-nav {
+    padding-bottom: 1em;
+    line-height: 1.3em;
+    font-weight: vars.$fontLight;
+  }
+
+  &__header {
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: vars.$fontBold;
+  }
+
+  &__section-title {
+    padding-top: 1em;
+    font-weight: vars.$fontMedium;
+  }
+
+  &__section-list {
+    font-size: 0.8em;
+  }
+
+  &__copyright {
+    font-size: 0.6em;
+  }
+}
