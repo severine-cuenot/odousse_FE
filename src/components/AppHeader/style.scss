@@ -1,21 +1,13 @@
 @use '../../styles/vars';
 @use '../../styles/mixin';
 
-.nav__desktop {
-  // Hide desktop nav for small screens
-  @media (max-width: vars.$mediumScreen) {
-    display: none;
-  }
-}
-
+// MOBILE NAVIGATION
 .nav__mobile{
   // Hide mobile nav for desktop and tablet screens
   @media (min-width: vars.$mediumScreen) {
     display: none;
   }
 }
-
-
 .nav-menu {
   display: block;
   height: 3.1em;
@@ -97,5 +89,28 @@
 
   &__not-expanded {
     display: none;
+  }
+}
+
+// DESKTOP NAVIGATION
+.nav__desktop {
+  // Hide desktop nav for small screens
+  @media (max-width: vars.$mediumScreen) {
+    display: none;
+  }
+}
+
+.nav-menu__desktop {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  align-items: center;
+
+  &--left-block {
+    display: flex;
+  }
+
+  &--right-block {
+    display: flex;
   }
 }

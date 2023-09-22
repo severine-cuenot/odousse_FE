@@ -54,8 +54,17 @@ function AppHeader({ handleChangeFont }) {
         <hr className="nav-menu__border-block" />
       </div>
       <div className="nav__desktop">
-        <nav className="nav-menu" role="navigation" aria-label="Menu de navigation">
-          Menu desktop
+        <nav className="nav-menu__desktop" role="navigation" aria-label="Menu de navigation">
+          <ul className="nav-menu__desktop--left-block">
+            <li><Link to="/" title="Retourner à la page d'accueil" className="nav-menu__logo">Ôdousse</Link></li>
+            <li><Link to="/lexicon">Glossaire</Link></li>
+            <li><Link to="/about">À propos</Link></li>
+          </ul>
+          <ul className="nav-menu__desktop--right-block">
+            <li><ToggleDyslexia onClick={handleChangeFont} /></li>
+            <li><Link to="/login"><Button label="S'inscrire" buttonStyle="simple" /></Link></li>
+            <li><Link to="/login"><Button label="Connexion" buttonStyle="empty" /></Link></li>
+          </ul>
         </nav>
         <hr className="nav-menu__border-block" />
       </div>
