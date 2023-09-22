@@ -14,27 +14,37 @@
   }
 
   &__main-nav {
-    padding-bottom: 1em;
-    line-height: 1.3em;
-    font-weight: vars.$fontLight;
+    @include mixin.medium {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+    }
   }
 
   &__header {
-    padding-bottom: 1em;
+    padding-bottom: 0.8em;
     font-size: 1.2em;
     font-weight: vars.$fontBold;
   }
 
   &__section-title {
-    padding-top: 1em;
+    padding-bottom: 0.8em;
     font-weight: vars.$fontMedium;
   }
 
   &__section-list {
     font-size: 0.8em;
+    line-height: 1.3em;
   }
 
   &__copyright {
+    margin-top: 1.5em;
     font-size: 0.6em;
+    @include mixin.medium {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
