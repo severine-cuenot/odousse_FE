@@ -1,6 +1,20 @@
 @use '../../styles/vars';
 @use '../../styles/mixin';
 
+.nav__desktop {
+  // Hide desktop nav for small screens
+  @media (max-width: vars.$mediumScreen) {
+    display: none;
+  }
+}
+
+.nav__mobile{
+  // Hide mobile nav for desktop and tablet screens
+  @media (min-width: vars.$mediumScreen) {
+    display: none;
+  }
+}
+
 
 .nav-menu {
   display: block;
