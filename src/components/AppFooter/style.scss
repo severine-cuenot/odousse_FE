@@ -29,8 +29,11 @@
   }
 
   &__section-title {
-    padding-bottom: 0.8em;
+    padding: 1.5em 0 0.8em;
     font-weight: vars.$fontMedium;
+    @include mixin.medium {
+      padding-bottom: 0.8em;
+    }
   }
 
   &__section-list {
