@@ -22,7 +22,9 @@
       #20738579,
       #207385ea,
     ), url(../../../public/img/hero.jpg);
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     height: auto;
     width: 100%;
   }
@@ -31,11 +33,20 @@
     display: flex;
     flex-direction: column;
     background-color: vars.$white;
-    width: 50%;
-    margin-left: 3em;
+    margin : 0 1.6em;
     padding: 1.5em;
     border-radius: vars.$btnRadius;
     color: vars.$darkblue;
+
+    @media (min-width: vars.$mediumScreen) {
+      width: 50%;
+      margin-left: 3em;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   &__input {
@@ -63,7 +74,4 @@
       margin-right: 0.5em;
     }
   }
-
-
 }
-
