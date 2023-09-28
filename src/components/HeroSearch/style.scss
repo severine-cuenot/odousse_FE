@@ -2,7 +2,8 @@
 
 
 .hero {
-  &__panel {
+
+  &__container {
     margin-top: 3em;
   }
 
@@ -15,8 +16,8 @@
   }
 
   &__section {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     background-image: linear-gradient(
       to left,
       #20738579,
@@ -29,12 +30,58 @@
     width: 100%;
   }
 
-  &__form {
+  // &__form {
+  //   display: flex;
+  //   flex-direction: column;
+  //   background-color: vars.$white;
+  //   margin : 0 1.6em;
+  //   padding: 1.5em;
+  //   border-radius: vars.$btnRadius;
+  //   color: vars.$darkblue;
+
+  //   @media (min-width: vars.$mediumScreen) {
+  //     width: 50%;
+  //     margin-left: 3em;
+  //   }
+
+  //   &-header {
+  //     display: flex;
+  //     justify-content: space-around;
+  //   }
+  // }
+
+  // &__input {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: flex-end;
+  //   padding-top: 1.5em;
+
+  //   &-label {
+  //     padding-bottom: 0.5em;
+  //     font-weight: vars.$fontMedium;
+  //   }
+
+  //   &-span {
+  //     display: flex;
+  //     align-items: flex-end;
+  //   }
+
+  //   &-box {
+  //     border: 0;
+  //     border-radius: vars.$btnRadius;
+  //     background-color: vars.$whiteblue;
+  //     width: 5em;
+  //     height: 2.3em;
+  //     margin-right: 0.5em;
+  //   }
+  // }
+
+  &__box {
     display: flex;
     flex-direction: column;
-    background-color: vars.$white;
+    background-color: vars.$lightblue;
     margin : 0 1.6em;
-    padding: 1.5em;
+    // padding: 1.5em;
     border-radius: vars.$btnRadius;
     color: vars.$darkblue;
 
@@ -42,36 +89,55 @@
       width: 50%;
       margin-left: 3em;
     }
+  }
 
-    &-header {
-      display: flex;
-      justify-content: space-around;
-    }
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
 
   &__input {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-top: 1.5em;
-
-    &-label {
-      padding-bottom: 0.5em;
-      font-weight: vars.$fontMedium;
-    }
-
-    &-span {
-      display: flex;
-      align-items: flex-end;
-    }
-
-    &-box {
-      border: 0;
-      border-radius: vars.$btnRadius;
-      background-color: vars.$whiteblue;
-      width: 5em;
-      height: 2.3em;
-      margin-right: 0.5em;
-    }
+    position: absolute;
+    opacity: 0;
   }
+
+  &__label {
+    width: 100%;
+    padding: 2em;
+    background-color: vars.$white;
+    cursor: pointer;
+    font-weight: vars.$fontBold;
+    color: vars.$darkblue;
+    transition: background 0.1s, color 0.1s;
+  }
+
+  &__label:hover {
+    background-color: vars.$whiteblue;
+  }
+
+  &__label:active {
+    background-color: vars.$white;
+  }
+
+  &__panel {
+    display: none;
+    background-color: vars.$white;
+  }
+}
+
+  .hero__input:focus + .hero__label {
+    z-index: 1;
+  }
+  .hero__input:checked + .hero__label {
+    background: #fff;
+    color: #000;
+  }
+
+  .hero__input:checked + .hero__label + .hero__panel {
+    display: block;
+}
+
+.hero__input:focus + .hero__label {
+  z-index: 1;
 }
