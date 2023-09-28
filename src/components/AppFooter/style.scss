@@ -14,7 +14,7 @@
   }
 
   &__main-nav {
-    @include mixin.medium {
+    @media (min-width: vars.$mediumScreen) {
       display: flex;
       flex-direction: row;
       align-items: baseline;
@@ -31,7 +31,7 @@
   &__section-title {
     padding: 1.5em 0 0.8em;
     font-weight: vars.$fontMedium;
-    @include mixin.medium {
+    @media (min-width: vars.$mediumScreen) {
       padding-bottom: 0.8em;
     }
   }
@@ -44,7 +44,7 @@
   &__copyright {
     margin-top: 1.5em;
     font-size: 0.6em;
-    @include mixin.medium {
+    @media (min-width: vars.$mediumScreen) {
       display: flex;
       align-items: center;
       justify-content: center;

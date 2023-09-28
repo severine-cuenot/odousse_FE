@@ -1,6 +1,10 @@
+import HeroSearch from '../../components/HeroSearch';
+
 function Home() {
   return (
-    <h1>Test homepage</h1>
+    <div>
+      <HeroSearch />
+    </div>
   );
 }
 

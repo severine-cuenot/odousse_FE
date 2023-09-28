@@ -1,0 +1,77 @@
+@use '../../styles/vars';
+
+
+.hero {
+  &__panel {
+    margin-top: 3em;
+  }
+
+  &__title {
+    color: vars.$white;
+    font-weight: vars.$fontMedium;
+    font-size: 1.3em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+      to left,
+      #20738579,
+      #207385ea,
+    ), url(../../../public/img/hero.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$white;
+    margin : 0 1.6em;
+    padding: 1.5em;
+    border-radius: vars.$btnRadius;
+    color: vars.$darkblue;
+
+    @media (min-width: vars.$mediumScreen) {
+      width: 50%;
+      margin-left: 3em;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 1.5em;
+
+    &-label {
+      padding-bottom: 0.5em;
+      font-weight: vars.$fontMedium;
+    }
+
+    &-span {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &-box {
+      border: 0;
+      border-radius: vars.$btnRadius;
+      background-color: vars.$whiteblue;
+      width: 5em;
+      height: 2.3em;
+      margin-right: 0.5em;
+    }
+  }
+}

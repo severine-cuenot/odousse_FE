@@ -2,8 +2,10 @@
 
 // Colors
 $white: #f7fdfd;
+$whiteblue: #C7E9EA;
+$lightblue: #1D99A1;
 $mediumblue: #207285;
-$darkblue: #1c223d;
+$darkblue: #217285;
 
 // Fonts
 $defaultFont: 'Montserrat', sans-serif;
@@ -17,3 +19,9 @@ $fontBold: 700;
 
 //Radius
 $btnRadius: 0.3em;
+
+// Breakpoints variables
+$smallScreen: 375px;
+$mediumScreen: 768px;
+$largeScreen: 1024px;
+$xlScreen: 1200px;

@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-function ToggleDyslexia({ onClick }) {
+function ToggleDesktop({ onClick }) {
   return (
-    <label className="toggle" htmlFor="Toggle">
+    <label className="toggle" htmlFor="ToggleDesktop">
       <input
         type="checkbox"
         className="toggle__input"
-        id="Toggle"
+        id="ToggleDesktop"
         onClick={onClick}
       />
       <span className="toggle__track">
@@ -25,8 +25,8 @@ function ToggleDyslexia({ onClick }) {
   );
 }
 
-ToggleDyslexia.propTypes = {
+ToggleDesktop.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-export default ToggleDyslexia;
+export default ToggleDesktop;
