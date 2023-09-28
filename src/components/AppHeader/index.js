@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import 'external-svg-loader';
 
 import ToggleDyslexia from '../ToggleDyslexia';
+import ToggleDesktop from '../ToggleDyslexia/desktopToggle';
 import Button from '../button';
 
 import burgerImg from '../../../public/img/burger.svg';
@@ -63,7 +64,7 @@ function AppHeader({ handleChangeFont }) {
             <li><Link to="/about">À propos</Link></li>
           </ul>
           <ul className="nav-menu__desktop--right-block">
-            <li><ToggleDyslexia onClick={handleChangeFont} /></li>
+            <li><ToggleDesktop onClick={handleChangeFont} /></li>
             <li><Link to="/login"><Button label="S'inscrire" buttonStyle="simple" /></Link></li>
             <li><Link to="/login"><Button label="Connexion" buttonStyle="empty" /></Link></li>
           </ul>
