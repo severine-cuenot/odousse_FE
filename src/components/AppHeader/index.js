@@ -60,8 +60,8 @@ function AppHeader({ handleChangeFont }) {
         <nav className="nav-menu__desktop" role="navigation" aria-label="Menu de navigation">
           <ul className="nav-menu__desktop--left-block">
             <li><Link to="/" title="Retourner à la page d'accueil" className="nav-menu__logo">Ôdousse</Link></li>
-            <li><Link to="/lexicon">Glossaire</Link></li>
-            <li><Link to="/about">À propos</Link></li>
+            <li><Link to="/lexicon" className="linkUnderlined">Glossaire</Link></li>
+            <li><Link to="/about" className="linkUnderlined">À propos</Link></li>
           </ul>
           <ul className="nav-menu__desktop--right-block">
             <li><ToggleDesktop onClick={handleChangeFont} /></li>
