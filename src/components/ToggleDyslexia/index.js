@@ -4,11 +4,11 @@ import './style.scss';
 
 function ToggleDyslexia({ onClick }) {
   return (
-    <label className="toggle" htmlFor="mobileToggle">
+    <label className="toggle" htmlFor="Toggle">
       <input
         type="checkbox"
         className="toggle__input"
-        id="mobileToggle"
+        id="Toggle"
         onClick={onClick}
       />
       <span className="toggle__track">

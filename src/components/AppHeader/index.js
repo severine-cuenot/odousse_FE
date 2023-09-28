@@ -21,6 +21,7 @@ function AppHeader({ handleChangeFont }) {
   const svgClass = isExpanded ? 'nav-menu__burger-svg-cross' : 'nav-menu__burger-svg';
   return (
     <div>
+      {/* navbar for mobile */}
       <div className="nav__mobile">
         <nav className="nav-menu" role="navigation" aria-label="Menu de navigation">
           <div className="nav-menu__block">
@@ -53,6 +54,7 @@ function AppHeader({ handleChangeFont }) {
         </nav>
         <hr className="nav-menu__border-block" />
       </div>
+      {/* navbar for desktop */}
       <div className="nav__desktop">
         <nav className="nav-menu__desktop" role="navigation" aria-label="Menu de navigation">
           <ul className="nav-menu__desktop--left-block">

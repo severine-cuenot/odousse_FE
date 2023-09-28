@@ -110,7 +110,16 @@
     display: flex;
   }
 
+  &--left-block > li {
+    padding-right: 1em; 
+  }
+
   &--right-block {
     display: flex;
+    align-items: center;
+  }
+
+  &--right-block > li {
+    padding-left: 1em;
   }
 }
