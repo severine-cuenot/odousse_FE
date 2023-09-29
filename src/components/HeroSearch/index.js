@@ -1,6 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-// import Button from '../button';
 import { useState } from 'react';
 
 import './style.scss';
@@ -51,9 +48,9 @@ function HeroSearch() {
           </ul>
         </div>
 
-        <div className="hero__panels flow">
+        <div className="hero__panels">
           <div id="fish" aria-labelledby="tab-1" className={activeTab === 'tab-1' ? 'active' : ''}>
-            blablablabla crevettes
+            blablablabla Poissons
           </div>
           <div id="invertebrate" aria-labelledby="tab-2" className={activeTab === 'tab-2' ? 'active' : ''}>
             blablablabla Invertébrés

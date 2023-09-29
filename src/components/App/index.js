@@ -1,6 +1,7 @@
 // Imports
 import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
+import useScrollTop from '../../hooks/useScrollTop';
 
 // Import components
 import AppHeader from '../AppHeader';
@@ -14,6 +15,8 @@ import './styles.scss';
 
 // == Composant
 function App() {
+  useScrollTop();
+
   // Change font
   const [isFontChanged, setFontChange] = useState(false);
   const handleChangeFont = () => {
