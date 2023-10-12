@@ -9,10 +9,10 @@
 
   &__title {
     color: vars.$white;
-    font-weight: vars.$fontMedium;
+    font-weight: vars.$fontBold;
     font-size: 1.3em;
     margin-left: 3em;
-    margin-bottom: 1em;
+    padding: 1em 0;
   }
 
   &__section {
@@ -30,7 +30,8 @@
 
   &__tabs-container {
     @media (min-width: vars.$mediumScreen) {
-      width : 50%
+      width: 50%;
+      padding-top: 1em;
     }
   }
   
@@ -71,7 +72,7 @@
 
   &__panels > div {
     display: none;
-    padding: 20px;
+    padding: 20px; 
     background-color: transparent;
     color: vars.$darkblue;
     border-radius: 5px;
