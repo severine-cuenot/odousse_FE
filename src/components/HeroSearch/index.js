@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import { useState } from 'react';
+
+import Button from '../button';
 
 import './style.scss';
 
@@ -11,7 +14,7 @@ function HeroSearch() {
 
   return (
     <div className="hero__container">
-      <h1 className="hero__title">Votre Recherche</h1>
+      <h1 className="hero__title">Recherche rapide</h1>
       <section className="hero__section">
         <div className="hero__tabs-container">
           <ul aria-labelledby="hero__title">
@@ -50,7 +53,18 @@ function HeroSearch() {
 
         <div className="hero__panels">
           <div id="fish" aria-labelledby="tab-1" className={activeTab === 'tab-1' ? 'active' : ''}>
-            blablablabla Poissons
+            <form>
+              <fieldset>
+                <div className="hero__input">
+                  <label htmlFor="litres" className="hero__input-label">Litrage de votre aquarium</label>
+                  <span className="hero__input-span"><input type="number" name="litres" id="litres" className="hero__input-box" /> Litres </span>
+                </div>
+                <Button label="Lancer la recherche" type="submit" />
+                <div>
+                  <p>+ Plus de critères</p>
+                </div>
+              </fieldset>
+            </form>
           </div>
           <div id="invertebrate" aria-labelledby="tab-2" className={activeTab === 'tab-2' ? 'active' : ''}>
             blablablabla Invertébrés
