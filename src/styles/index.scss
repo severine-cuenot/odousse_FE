@@ -2,7 +2,11 @@
 @use 'vars';
 
 body {
-  background-color: #F0F;
+  background: rgb(28,131,159);
+  background: -moz-linear-gradient(164deg, rgba(28,131,159,1) 0%, rgba(37,205,199,1) 50%, rgba(127,251,215,1) 100%);
+  background: -webkit-linear-gradient(164deg, rgba(28,131,159,1) 0%, rgba(37,205,199,1) 50%, rgba(127,251,215,1) 100%);
+  background: linear-gradient(164deg, rgba(28,131,159,1) 0%, rgba(37,205,199,1) 50%, rgba(127,251,215,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c839f",endColorstr="#7ffbd7",GradientType=1); 
   min-height: 100vh;
   font-size: 100%;
   font-weight: 400;
