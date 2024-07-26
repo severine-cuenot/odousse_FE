@@ -1,9 +1,7 @@
-import HeroSearch from '../../components/HeroSearch';
-
 function Home() {
   return (
     <div>
-      <HeroSearch />
+      Test homepage
     </div>
   );
 }

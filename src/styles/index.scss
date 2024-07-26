@@ -1,58 +1,11 @@
 @use 'reset';
 @use 'vars';
 
-//font for dyslexia
-@font-face {
-  font-family: 'OpenDyslexic';
-  src: url('../assets/fonts/OpenDyslexic3-Regular.ttf')
-}
-
 body {
+  background-color: #F0F;
   min-height: 100vh;
   font-size: 100%;
   font-weight: 400;
-  background: vars.$darkblue;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right top, #217084, #1badae);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right top, #217084, #1badae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-ul , li {
-  list-style-type: none;
-}
-
-// default body font
-.default-font {
-  font-family: vars.$defaultFont;
-}
-
-// Dyslexia font
-.dyslexia-font {
-  font-family: vars.$dyslexiaFont;
-}
-
-// Links
-.linkUnderlined {
-  position: relative;
-}
-
-.linkUnderlined::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: vars.$white;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .linkUnderlined:hover::before{
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
-}
-
 
 
