@@ -1,6 +1,12 @@
-@use 'reset';
-@use 'vars';
-
+// @use 'reset';
+// @use 'vars';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/bootstrap';
 
 
+
+.colortest {
+  color: $cyan-800;
+}

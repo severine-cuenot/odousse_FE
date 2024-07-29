@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 function Home() {
   return (
     <div>
-      <h1>
+      <h1 className="colortest">
         Hello world!
       </h1>
 
