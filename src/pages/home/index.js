@@ -1,7 +1,20 @@
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
+
 function Home() {
   return (
     <div>
-      Test homepage
+      <h1>
+        Hello world!
+      </h1>
+
+      <h2>
+        Example heading
+        <Badge bg="secondary" as={Button}>
+          New
+        </Badge>
+      </h2>
+
     </div>
   );
 }

@@ -3,6 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from 'src/components/App';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/index.scss';
+
 const rootReactElement = (
   <BrowserRouter>
     <App />

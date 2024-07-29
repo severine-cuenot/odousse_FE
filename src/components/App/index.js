@@ -9,7 +9,7 @@ import AppFooter from '../AppFooter';
 import Home from '../../pages/home';
 
 // Import style
-import './styles.scss';
+// import './styles.scss';
 
 // == Composant
 function App() {
