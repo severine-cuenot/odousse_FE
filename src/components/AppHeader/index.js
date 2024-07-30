@@ -9,7 +9,7 @@ import './style.scss';
 
 function AppHeader() {
   return (
-    <Navbar expand="md" sticky="top" className="bg-body-tertiary">
+    <Navbar expand="md" sticky="top" className="bg-body-tertiary mx-3">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -21,9 +21,11 @@ function AppHeader() {
           />{' '}
           Ôdousse
         </Navbar.Brand>
+      </Container>
+      <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link href="#home">Accueil</Nav.Link>
             <Nav.Link href="#link">Liens utiles</Nav.Link>
             <NavDropdown title="Recherche" id="basic-nav-dropdown">

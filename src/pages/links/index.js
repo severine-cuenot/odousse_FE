@@ -1,9 +1,6 @@
-import Hero from '../../components/Hero';
-
-function Home() {
+function Links() {
   return (
     <div>
-      <Hero />
       <h1 className="colortest">
         Hello world!
       </h1>
@@ -12,4 +9,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Links;
