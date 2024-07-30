@@ -1,12 +1,12 @@
-function Search() {
+function results() {
   return (
     <div>
       <h1 className="colortest">
-        Hello world!
+        Page de résultats
       </h1>
 
     </div>
   );
 }
 
-export default Search;
+export default results;

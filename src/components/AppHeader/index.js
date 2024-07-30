@@ -9,7 +9,7 @@ import './style.scss';
 
 function AppHeader() {
   return (
-    <Navbar expand="md" sticky="top" className="bg-body-tertiary mx-3">
+    <Navbar expand="md" sticky="top" className="bg-body-secondary px-3">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -26,9 +26,7 @@ function AppHeader() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Accueil</Nav.Link>
-            <Nav.Link href="#link">Liens utiles</Nav.Link>
-            <NavDropdown title="Recherche" id="basic-nav-dropdown">
+            <NavDropdown title="Recherche par thème" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Par litrage</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Par biotope
@@ -36,9 +34,14 @@ function AppHeader() {
               <NavDropdown.Item href="#action/3.3">Par catégorie</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Tout voir
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="#home">Recherche détaillée</Nav.Link>
+            <Nav.Link href="#home">Accueil</Nav.Link>
+            <Nav.Link href="#link">Liens utiles</Nav.Link>
+            <Nav.Link href="#link">A propos</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

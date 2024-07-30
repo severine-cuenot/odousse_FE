@@ -8,16 +8,16 @@ import AppFooter from '../AppFooter';
 // Import pages
 import Home from '../../pages/home';
 
-// == Composant
+// Import style
+import './styles.scss';
+
 function App() {
   return (
-    <div>
+    <div className="app">
       <AppHeader />
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <AppFooter />
     </div>
   );

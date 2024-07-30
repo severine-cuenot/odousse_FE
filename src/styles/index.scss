@@ -10,3 +10,9 @@
 .colortest {
   color: $cyan-800;
 }
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-weight: 400;
+}
