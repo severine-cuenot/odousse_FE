@@ -1,18 +1,12 @@
 // @use 'reset';
 // @use 'vars';
+
+
+// Import variables overrides
+@import "./abstracts/variables";
+
+
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/bootstrap';
-
-
-
-.colortest {
-  color: $cyan-800;
-}
-
-body {
-  min-height: 100vh;
-  font-size: 100%;
-  font-weight: 400;
-}
