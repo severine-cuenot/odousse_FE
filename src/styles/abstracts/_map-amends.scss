@@ -1,0 +1,11 @@
+// My own map to change theme-color by adding colors that don't exist
+
+$paons: (
+  "paon": #074955,
+);
+$light-paons: (
+  "light-paon": #0c6f74,
+);
+
+// Merge the map
+$theme-colors: map-merge($theme-colors, $paons );
