@@ -1,12 +1,12 @@
-function About() {
+function results() {
   return (
     <div>
       <h1 className="colortest">
-        Hello world!
+        Page de résultats
       </h1>
 
     </div>
   );
 }
 
-export default About;
+export default results;

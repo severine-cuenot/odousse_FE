@@ -1,4 +1,4 @@
-function About() {
+function Links() {
   return (
     <div>
       <h1 className="colortest">
@@ -9,4 +9,4 @@ function About() {
   );
 }
 
-export default About;
+export default Links;

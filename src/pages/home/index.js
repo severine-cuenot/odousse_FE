@@ -1,9 +1,15 @@
-import HeroSearch from '../../components/HeroSearch';
+import Hero from '../../components/Hero';
+import NewFishCards from '../../components/NewFishCards';
 
 function Home() {
   return (
     <div>
-      <HeroSearch />
+      <h1 className="text-paon">
+        Hello world!
+      </h1>
+      <Hero />
+      <NewFishCards />
+
     </div>
   );
 }
