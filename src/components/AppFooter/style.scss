@@ -1,1 +1,23 @@
 @use '../../styles/vars';
+
+.footer {
+  &__topBlock{
+    @media (min-width: vars.$mobile) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__topBlock-left {
+    @media (min-width: vars.$mobile) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__topBlock-right {
+    @media (min-width: vars.$mobile) {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
