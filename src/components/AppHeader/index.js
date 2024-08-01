@@ -1,5 +1,4 @@
 // Bootstrap imports
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -9,8 +8,8 @@ import './style.scss';
 
 function AppHeader() {
   return (
-    <Navbar expand="md" sticky="top" className="bg-body-secondary px-3">
-      <Container>
+    <Navbar expand="md" sticky="top" className="bg-white px-3">
+      <div>
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -21,8 +20,8 @@ function AppHeader() {
           />{' '}
           Ôdousse
         </Navbar.Brand>
-      </Container>
-      <Container>
+      </div>
+      <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -44,7 +43,7 @@ function AppHeader() {
 
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 }
