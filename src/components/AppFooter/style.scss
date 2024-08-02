@@ -1,1 +1,39 @@
 @use '../../styles/vars';
+
+.footer {
+  &__topBlock{
+    @media (min-width: vars.$mobile) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__topBlock-left {
+    @media (min-width: vars.$mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__topBlock-right {
+    @media (min-width: vars.$mobile) {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__navList {
+    list-style: none;
+    padding-left: 0;
+  }
+  &__links {
+    text-decoration: none;
+    color: vars.$white;
+  }
+  &__links:active {
+    font-weight: 700;
+    color: vars.$orange;
+  }
+  &__links:focus, &__links:hover {
+    color: vars.$orange;
+  }
+}

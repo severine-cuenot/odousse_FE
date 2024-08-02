@@ -1,28 +1,13 @@
 @use "sass:color";
-
-// Colors
+// COLORS
+$paon: #074955;
+$light-paon: #0c6f74;
+$orange: #d8534a;
 $white: #f7fdfd;
-$whiteblue: #C7E9EA;
-$lightblue: #1D99A1;
-$mediumblue: #207285;
-$darkblue: #217285;
 
+// BREAKPOINTS
 
-// Fonts
-$defaultFont: 'Montserrat', sans-serif;
-$dyslexiaFont: 'OpenDyslexic', sans-serif;
-
-//Font sizes and weight
-$btnFont: 0.8em;
-$fontLight: 300;
-$fontMedium: 500;
-$fontBold: 700;
-
-//Radius
-$btnRadius: 0.3em;
-
-// Breakpoints variables
-$smallScreen: 375px;
-$mediumScreen: 768px;
-$largeScreen: 1024px;
-$xlScreen: 1200px;
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;

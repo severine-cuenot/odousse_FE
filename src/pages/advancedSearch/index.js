@@ -1,4 +1,4 @@
-function Links() {
+function AdvancedSearch() {
   return (
     <div>
       <h1 className="colortest">
@@ -9,4 +9,4 @@ function Links() {
   );
 }
 
-export default Links;
+export default AdvancedSearch;
