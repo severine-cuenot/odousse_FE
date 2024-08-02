@@ -24,22 +24,21 @@ function AppHeader() {
       <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+          <Nav.Link href="#home">Accueil</Nav.Link>
           <Nav className="ms-auto">
             <NavDropdown title="Recherche par thème" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Par litrage</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Par biotope
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Par catégorie</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Tout voir
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#home">Recherche détaillée</Nav.Link>
-            <Nav.Link href="#home">Accueil</Nav.Link>
-            <Nav.Link href="#link">Liens utiles</Nav.Link>
-            <Nav.Link href="#link">A propos</Nav.Link>
+            <Nav.Link href="#link">Ressources</Nav.Link>
+            <Nav.Link href="#link">À propos</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
