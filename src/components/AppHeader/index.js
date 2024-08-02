@@ -10,7 +10,7 @@ function AppHeader() {
   return (
     <Navbar expand="md" sticky="top" className="bg-white px-3">
       <div>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             alt=""
             src="/img/logo.svg"
@@ -24,11 +24,11 @@ function AppHeader() {
       <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav.Link href="#home">Accueil</Nav.Link>
+          <Nav.Link href="/">Accueil</Nav.Link>
           <Nav className="ms-auto">
             <NavDropdown title="Recherche par thème" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Par litrage</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="litrage">Par litrage</NavDropdown.Item>
+              <NavDropdown.Item href="biotopes">
                 Par biotope
               </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -36,9 +36,9 @@ function AppHeader() {
                 Tout voir
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#home">Recherche détaillée</Nav.Link>
-            <Nav.Link href="#link">Ressources</Nav.Link>
-            <Nav.Link href="#link">À propos</Nav.Link>
+            <Nav.Link href="/recherche">Recherche détaillée</Nav.Link>
+            <Nav.Link href="/ressources">Ressources</Nav.Link>
+            <Nav.Link href="/about">À propos</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
