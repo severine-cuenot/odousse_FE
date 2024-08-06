@@ -3,7 +3,7 @@
 .hero {
   &__bg-img {
     background-attachment: fixed;
-    background-image: url(../../../public/img/hero.jpg);
+    background-image: linear-gradient(to bottom, #0c6f74c3, #074955c3),  url(../../../public/img/hero.jpg);
     background-color: vars.$light-paon;
   }
   &__mainTitle {
