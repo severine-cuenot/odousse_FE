@@ -3,14 +3,10 @@ import NewFishCards from '../../components/NewFishCards';
 
 function Home() {
   return (
-    <div>
-      <h1 className="text-paon">
-        Hello world!
-      </h1>
+    <main>
       <Hero />
       <NewFishCards />
-
-    </div>
+    </main>
   );
 }
 

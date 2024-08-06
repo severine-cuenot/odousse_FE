@@ -16,14 +16,14 @@ function AppFooter() {
           <nav>
             <h5><strong>Les recherches par thèmes</strong></h5>
             <ul className="footer__navList">
-              <li><Link to="/biotopes" className="footer__links">Biotopes</Link></li>
+              <li><Link to="biotopes" className="footer__links">Biotopes</Link></li>
               <li><Link to="litrage" className="footer__links">Litrage</Link></li>
             </ul>
           </nav>
           <nav>
             <h5><strong>À propos</strong></h5>
             <ul className="footer__navList">
-              <li><Link to="/about" className="footer__links">Le projet</Link></li>
+              <li><Link to="about" className="footer__links">Le projet</Link></li>
               <li><Link to="policy" className="footer__links">Mentions légales</Link></li>
             </ul>
           </nav>

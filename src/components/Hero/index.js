@@ -4,8 +4,8 @@ import './style.scss';
 
 function Hero() {
   return (
-    <section className="bg-light-paon">
-      <h1>Hero</h1>
+    <section className="hero__bg-img p-5">
+      <h1 className="hero__mainTitle">Trouvez les habitants parfaits pour vos aquariums</h1>
       <SearchBar />
     </section>
   );

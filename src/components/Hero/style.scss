@@ -1,1 +1,12 @@
 @use '../../styles/vars';
+
+.hero {
+  &__bg-img {
+    background-attachment: fixed;
+    background-image: url(../../../public/img/hero.jpg);
+    background-color: vars.$light-paon;
+  }
+  &__mainTitle {
+  color: vars.$white;
+  }
+}

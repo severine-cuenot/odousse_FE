@@ -24,8 +24,8 @@ function AppHeader() {
       <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav.Link href="/">Accueil</Nav.Link>
-          <Nav className="ms-auto">
+          <Nav.Link className="px-3" href="/">Accueil</Nav.Link>
+          <Nav className="ms-auto px-3">
             <NavDropdown title="Recherche par thème" id="basic-nav-dropdown">
               <NavDropdown.Item href="litrage">Par litrage</NavDropdown.Item>
               <NavDropdown.Item href="biotopes">
@@ -36,9 +36,9 @@ function AppHeader() {
                 Tout voir
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/recherche">Recherche détaillée</Nav.Link>
-            <Nav.Link href="/ressources">Ressources</Nav.Link>
-            <Nav.Link href="/about">À propos</Nav.Link>
+            <Nav.Link className="px-3" href="/recherche">Recherche détaillée</Nav.Link>
+            <Nav.Link className="px-3" href="/ressources">Ressources</Nav.Link>
+            <Nav.Link className="px-3" href="/about">À propos</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
