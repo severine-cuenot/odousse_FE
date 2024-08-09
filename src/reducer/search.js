@@ -1,7 +1,7 @@
 import { LAUNCH_SEARCH } from '../actions';
 
 export const initialState = {
-  yourLitereage: '',
+  yourLitreage: '',
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -9,7 +9,7 @@ const reducer = (state = initialState, action = {}) => {
     case LAUNCH_SEARCH:
       return {
         ...state,
-        yourLitereage: action.learnOrShare,
+        yourLitreage: action.yourLitreage,
       };
     default:
       return state;

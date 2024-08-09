@@ -1,6 +1,6 @@
 export const LAUNCH_SEARCH = 'LAUNCH_SEARCH';
 
-export const launchSearch = (yourLitereage) => ({
+export const launchSearch = (yourLitreage) => ({
   type: LAUNCH_SEARCH,
-  yourLitereage,
+  yourLitreage,
 });
