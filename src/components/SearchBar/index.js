@@ -3,7 +3,11 @@ import './style.scss';
 
 function SearchBar() {
   return (
-    <h1>Search dropover</h1>
+    <form className="">
+      <label htmlFor="exampleFormControlInput1" className="form-label">Litrage de votre aquarium</label>
+      <input type="number" className="form-control" id="exampleFormControlInput1" placeholder="120" />
+      <button type="submit" value="submit" className="btn btn-primary">Rechercher</button>
+    </form>
   );
 }
 
